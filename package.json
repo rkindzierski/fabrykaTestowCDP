@@ -1,0 +1,23 @@
+{
+  "name": "fabrykatestowcdp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkindzierski/fabrykaTestowCDP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rkindzierski/fabrykaTestowCDP/issues"
+  },
+  "homepage": "https://github.com/rkindzierski/fabrykaTestowCDP#readme",
+  "devDependencies": {
+    "cypress": "^12.1.0",
+    "@faker-js/faker": "^7.6.0"
+  }
+}
