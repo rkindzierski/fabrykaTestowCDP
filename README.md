@@ -1,0 +1,1 @@
+W tym repo będę zamieszczał swóje postępy z kursu 'Cypress dla początkujących' z Fabryki Testów.
