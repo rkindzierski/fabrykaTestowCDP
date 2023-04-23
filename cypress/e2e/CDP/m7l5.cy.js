@@ -3,6 +3,7 @@ import InputPage from "../../page-object/inputPage";
 import CheckboxPage from "../../page-object/checkboxPage";
 import DropdownListPage from "../../page-object/dropdownListPage";
 import HoversPage from "../../page-object/hoversPage";
+import BasicAuth from "../../page-object/basicAuthPage";
 
 describe('my first scenario', () => {
     beforeEach(() => {
