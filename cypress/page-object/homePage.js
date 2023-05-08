@@ -7,6 +7,8 @@ const hoversHeader = '#hovers-header'
 const basicAuthHeader = '#basicauth-header'
 const formHeader = '#form-header'
 const keyHeader = '#keypresses-header'
+const datePickerHeader = '#datepicker-header'
+const addRemoveHeader = '#addremoveelements-header'
 
 class HomePage{
     clickInputsTab() {
@@ -41,7 +43,14 @@ class HomePage{
     clickKeyPresses() {
         cy.get(keyHeader).click()
     }
-}
 
+    clickDatePicker() {
+        cy.get(datePickerHeader).click()
+    }
+
+    clickAddRemove() {
+        cy.get(addRemoveHeader).click()
+    }
+}
 
 export default HomePage;

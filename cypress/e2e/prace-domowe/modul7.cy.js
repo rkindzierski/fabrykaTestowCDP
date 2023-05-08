@@ -7,6 +7,8 @@ import BasicAuth from "../../page-object/basicAuthPage";
 import BasicAuthPage from "../../page-object/basicAuthPage";
 import FormPage from "../../page-object/formPage";
 import KeyPressesPage from "../../page-object/keyPressesPage";
+import DatePickerPage from "../../page-object/datePickerPage";
+import AddRemoveElementPage from "../../page-object/addRemovePage";
 
 describe('my first scenario', () => {
     beforeEach(() => {
@@ -22,7 +24,14 @@ describe('my first scenario', () => {
         checkboxPage.uncheckLastCheckbox()
     })
 
-    // date picker
+    // it.only('test date picker', function () {
+    //     const homePage = new HomePage();
+    //     homePage.clickDatePicker()
+
+    //     const datePickerPage = new DatePickerPage();
+    //     datePickerPage.typeByHand()
+    //     datePickerPage.selectByIcon()
+    // })
 
     it('test hover', function () {
         const homePage = new HomePage();
@@ -73,9 +82,17 @@ describe('my first scenario', () => {
         keyPresses.focusAndPressKey()
     })
 
-    // drag and drop
+    // drag and drop - na 6
 
-    // drop/remove element
+    // add/remove element
+    it('test add/remove elements', function () {
+        const homePage = new HomePage();
+        homePage.clickAddRemove()
+
+        const addRemove = new AddRemoveElementPage();
+        addRemove.addAndRemoveElement()
+        addRemove.multipleAddAndRemoveElement()
+    })
 
     // status codes
    
