@@ -13,8 +13,6 @@ class AddRemoveElementPage{
     multipleAddAndRemoveElement(){
         cy.get(addElement).click().click().click()
         cy.get(removeElement).should('have.length', 3).click({multiple: true}).should('not.have.length')
-        // cy.get(removeElement).click()
-        // cy.get(checkElement).should('not.have.length')
     }
 }
 

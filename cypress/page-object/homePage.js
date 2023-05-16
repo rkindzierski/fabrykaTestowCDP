@@ -9,6 +9,9 @@ const formHeader = '#form-header'
 const keyHeader = '#keypresses-header'
 const datePickerHeader = '#datepicker-header'
 const addRemoveHeader = '#addremoveelements-header'
+const dragAndDropHeader = '#draganddrop-header'
+const statusCodesHeader = '#statuscodes-header'
+const iframeHeader = '#iframe-header'
 
 class HomePage{
     clickInputsTab() {
@@ -50,6 +53,18 @@ class HomePage{
 
     clickAddRemove() {
         cy.get(addRemoveHeader).click()
+    }
+
+    clickDragAndDrop() {
+        cy.get(dragAndDropHeader).click()
+    }
+
+    clickStatusCodes() {
+        cy.get(statusCodesHeader).click()
+    }
+
+    clickIframeHeader(){
+        cy.get(iframeHeader).click()
     }
 }
 
