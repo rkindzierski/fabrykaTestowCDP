@@ -102,15 +102,15 @@ describe('my first scenario', () => {
         addRemove.multipleAddAndRemoveElement()
     })
 
-    it.only('test status codes', function (){
+    it('test status codes', function (){
         const homePage = new HomePage();
         homePage.clickStatusCodes()
 
         const statusCodes = new StatusCodesPage();
         statusCodes.getStatus200()
-        //statusCodes.getStatus305()
-        //statusCodes.getStatus404()
-        //statusCodes.getStatus500()
+        statusCodes.getStatus305()
+        statusCodes.getStatus404()
+        statusCodes.getStatus500()
     })
 
     it('test iframe', function(){
