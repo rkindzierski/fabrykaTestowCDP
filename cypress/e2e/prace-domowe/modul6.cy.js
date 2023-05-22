@@ -25,6 +25,9 @@ describe('praca domowa do modułu 6, dodanie PUT i DELETE', () => {
         ).then((response) => {
             const body = JSON.stringify(response.body)
             cy.log(body)
+            expect(response.body).to.have.property('title', 'foo')
+            expect(response.body).to.have.property('body', 'bar')
+            expect(response.body).to.have.property('userID', 1)
         })
 
         cy.request(
